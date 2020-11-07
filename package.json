@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "typesenseServer": "docker run -i -p 8108:8108 -v/tmp/typesense-server-data-1c/:/data typesense/typesense:0.13.0 --data-dir /data --api-key=YOYCpFLj9u412ihigstCer5Zs2StzptR --listen-port 8108 --enable-cors",
+    "deploy": "sh deploy.sh",
     "populateTypesenseIndex": "node populateTypesenseIndex.js"
   },
   "dependencies": {

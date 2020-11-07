@@ -1,4 +1,8 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+
+  ? '/MyTale/'
+  : '/',
   "pages": {
     "index": "src/pages/index/main.js",
     "search_app": "src/pages/search_app/main.js",
@@ -11,9 +15,9 @@ module.exports = {
   "transpileDependencies": [
     "vuetify"
   ],
-  "devServer": {
-    "disableHostCheck": true,
-    //"public": "http://vcm-15431.vm.duke.edu:8080"
+  // "devServer": {
+  //   "disableHostCheck": true,
+  //   //"public": "http://vcm-15431.vm.duke.edu:8080"
     
-  }
+  // }
 }
